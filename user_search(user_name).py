@@ -1,7 +1,3 @@
-#This imorts the request
-import requests
-#We import base url and access token from another file called constant
-from constants import base_url ,access_token
 
 
 # https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN
