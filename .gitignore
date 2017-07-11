@@ -1,3 +1,4 @@
+#we use this file to ignore irrelevant files
 .idea/*
 *.pyc
 *.pyo
