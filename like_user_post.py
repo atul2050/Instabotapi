@@ -2,18 +2,18 @@
 import requests
 #We import base url and access token from another file called constant
 from constants import base_url ,access_token
-import latest_post
+from latest_post import latest_post
 import comment_user_post
 
-#for deleting the comment
-def delete_comment(user_name):
+
+#it is for making the like on te user id
+def like_user_post(user_name):
     post_id = latest_post(user_name)
-    comment_id = comment_user_post(user_name)
-    request_url = base_url + "/media/" + post_id + "/comments/" + comment_id + "?access_token=" + access_token
-    request_comment = requests.delete(request_url).json()
-    if request_comment['meta']['code'] == 200:
-        print("your comment is deleted")
-        # print comments
+    payload = {"access_token": access_token}
+    request_url = base_url + "/media/" + post_id + "/likes"
+    response_to_like = requests.post(request_url, payload).json()
+    if response_to_like['meta']['code'] == 200:
+        print ("pic has been liked")
+        # print response_to_like
     else:
-        print("Some error occurred! Try Again.")
-        print request_comment
+        print("Something went wrong! Please do it again")

@@ -2,7 +2,7 @@
 import requests
 #We import base url and access token from another file called constant
 from constants import base_url ,access_token
-import user_search
+from user_search import user_search
 
 # print user_info['data'][0]['profile_picture']
 # user_search("atul2050")

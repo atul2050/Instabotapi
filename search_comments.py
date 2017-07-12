@@ -2,7 +2,7 @@
 import requests
 #We import base url and access token from another file called constant
 from constants import base_url ,access_token
-import latest_post
+from latest_post import latest_post
 
 #for searching the comment
 def search_comments(user_name):

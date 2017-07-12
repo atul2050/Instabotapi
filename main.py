@@ -3,23 +3,23 @@ import requests
 #We import base url and access token from another file called constant
 import constants
 #Here we take collection data from user
-import self_info
+from self_info import self_info
 
 # https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN
-import user_search
+from user_search import user_search
 
 # print user_info['data'][0]['profile_picture']
 # user_search("atul2050")
-import  latest_post
+from latest_post import  latest_post
 
 #it is for making the like on te user id
-import  like_user_post
+from like_user_post import like_user_post
 
 # This is to check the comment on users post
-import  comment_user_post
+from comment_user_post import comment_user_post
 
 #for deleting the comment
-import  delete_comment
+from delete_comment import  delete_comment
 
 
 
