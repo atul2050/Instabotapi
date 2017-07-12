@@ -2,8 +2,8 @@
 import requests
 #We import base url and access token from another file called constant
 from constants import base_url ,access_token
-from latest_post(user_name) import latest_post(user_name)
-from comment_user_post(user_name) import comment_user_post(user_name)
+import latest_post
+import comment_user_post
 
 #for deleting the comment
 def delete_comment(user_name):
