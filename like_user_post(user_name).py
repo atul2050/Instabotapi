@@ -2,7 +2,7 @@
 import requests
 #We import base url and access token from another file called constant
 from constants import base_url ,access_token
-
+from latest_post(user_name) import latest_post(user_name)
 
 #it is for making the like on te user id
 def like_user_post(user_name):
