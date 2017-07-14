@@ -1,7 +1,5 @@
 #This imorts the request
 import requests
-#We import base url and access token from another file called constant
-import constants
 
 print("\nHello User! Welcome to the Instabot Environment.")
 choice = 1
@@ -15,7 +13,10 @@ while choice != '7':
     print("6. Delete the comment containing a particular word.")
     print("7. Exit.\n\n")
 
-#Here we take collection data from user
+    # We import base url and access token from another file called constant
+    import constants
+
+    #Here we take collection data from user
 
 
 
