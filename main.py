@@ -2,28 +2,6 @@
 import requests
 #We import base url and access token from another file called constant
 import constants
-#Here we take collection data from user
-from self_info import self_info
-
-# https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN
-from user_search import user_search
-
-# print user_info['data'][0]['profile_picture']
-# user_search("atul2050")
-from latest_post import  latest_post
-
-#it is for making the like on te user id
-from like_user_post import like_user_post
-
-# This is to check the comment on users post
-from comment_user_post import comment_user_post
-
-#for deleting the comment
-from delete_comment import  delete_comment
-
-
-
-
 
 print("\nHello User! Welcome to the Instabot Environment.")
 choice = 1
@@ -37,6 +15,31 @@ while choice != '7':
     print("6. Delete the comment containing a particular word.")
     print("7. Exit.\n\n")
 
+#Here we take collection data from user
+
+
+
+# https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN
+    from user_search import user_search
+
+# print user_info['data'][0]['profile_picture']
+# user_search("atul2050")
+    from latest_post import  latest_post
+
+#it is for making the like on te user id
+    from like_user_post import like_user_post
+
+# This is to check the comment on users post
+    from comment_user_post import comment_user_post
+
+#for deleting the comment
+    from delete_comment import  delete_comment
+
+
+
+
+
+
     choice = input("Enter Your Choice(1-7) : ")   #choose the number you want
 
     user_name = raw_input("Enter the following users 1.shafiqur.raghib 2.ankit143z 3.pdigvijay17")
@@ -44,6 +47,7 @@ while choice != '7':
         # Perform Actions Depending on the User's Choice. Runs Until User wishes to Exit.
         # if choice in ['1', '2', '3', '4', '5', '6', '7']:
     if int(choice) == 1:
+        from self_info import self_info
         self_info()
 
     elif int(choice) == 2:
